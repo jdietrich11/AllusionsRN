@@ -1,4 +1,15 @@
-import { View, Text, StyleSheet, Pressable } from "react-native";
+import { View, Text, StyleSheet, Pressable, Image } from "react-native";
+
+import styles from "./card-select.styles";
+
+const TempCardpacks = [
+  "Starting",
+  "history",
+  "Marvel",
+  "Actors",
+  "Theatre",
+  "Sports",
+];
 
 function CardSelect({ navigation }) {
   return (
@@ -9,7 +20,19 @@ function CardSelect({ navigation }) {
         </Pressable>
       </View>
       <View style={styles.cardPickerContainer}>
-        <Text>Pick your Cards</Text>
+        <View style={styles.cardpackPickerTitleContainer}>
+          <Text style={styles.cardpackPickerTitle}>SELECT YOUR CARDPACKS!</Text>
+        </View>
+        <View style={styles.cardpacks}>
+          {TempCardpacks.map((cardpack) => (
+            <View style={styles.cardpack}>
+              <Image style={styles.cardpackImage} />
+              <View style={styles.cardpackTitleContainer}>
+                <Text style={styles.cardpackTitle}>{cardpack}</Text>
+              </View>
+            </View>
+          ))}
+        </View>
       </View>
       <View style={styles.gameLengthContainer}>
         <Text>number of cards select</Text>
@@ -22,30 +45,3 @@ function CardSelect({ navigation }) {
 }
 
 export default CardSelect;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  containerHeader: {
-    flex: 1,
-    backgroundColor: "black",
-    justifyContent: "center",
-  },
-  headerText: {
-    color: "white",
-    fontSize: 22,
-    padding: 32,
-  },
-  cardPickerContainer: {
-    flex: 5,
-    backgroundColor: "red",
-  },
-  gameLengthContainer: {
-    flex: 1.5,
-    backgroundColor: "blue",
-  },
-  secondsPerTurnContainer: {
-    flex: 1.5,
-  },
-});
