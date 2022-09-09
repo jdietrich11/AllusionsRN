@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Pressable, Image } from "react-native";
+import { View, Text, StyleSheet, Pressable, Image, Button } from "react-native";
 
 import styles from "./card-select.styles";
 
@@ -35,7 +35,25 @@ function CardSelect({ navigation }) {
         </View>
       </View>
       <View style={styles.gameLengthContainer}>
-        <Text>number of cards select</Text>
+        <View style={styles.cardCounterContainer}>
+          <View style={styles.cardCounter}>
+            <Pressable style={styles.cardAdjustmentCounter}>
+              <Text style={styles.cardCounterText}>-</Text>
+            </Pressable>
+            <View style={styles.cardCountBox}>
+              <Text style={styles.cardCount}>{"37 cards"}</Text>
+            </View>
+            <Pressable style={styles.cardAdjustmentCounter}>
+              <Text style={styles.cardCounterText}>+</Text>
+            </Pressable>
+          </View>
+          <View style={styles.cardpackCounter}>
+            <Text style={styles.cardCounterText}>{"from 3 cardpacks"}</Text>
+          </View>
+        </View>
+        <View style={styles.playtimeContainer}>
+          <Text>{"~ 40 Minutes"}</Text>
+        </View>
       </View>
       <View style={styles.secondsPerTurnContainer}>
         <Text>Second Turns???</Text>

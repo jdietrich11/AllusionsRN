@@ -3,6 +3,7 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: "#f8f8ff",
   },
   containerHeader: {
     flex: 1,
@@ -16,7 +17,6 @@ const styles = StyleSheet.create({
   },
   cardPickerContainer: {
     flex: 5,
-    backgroundColor: "#f8f8ff",
   },
   cardpackPickerTitleContainer: {
     justifyContent: "center",
@@ -55,8 +55,37 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },
   gameLengthContainer: {
-    flex: 1.5,
-    backgroundColor: "blue",
+    borderTopWidth: 2,
+    borderBottomWidth: 2,
+    padding: 8,
+    alignItems: "center",
+  },
+  cardCounterContainer: {
+    flexDirection: "row",
+  },
+  cardCounter: {
+    flexDirection: "row",
+  },
+  cardCounterText: {
+    fontSize: 25,
+  },
+  cardAdjustmentCounter: {
+    borderWidth: 2,
+    height: 30,
+    width: 30,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  cardCountBox: {
+    borderTopWidth: 2,
+    borderBottomWidth: 2,
+    textAlign: "center",
+  },
+  cardCount: {
+    height: 25,
+    width: 75,
+    fontSize: 18,
+    textAlign: "center",
   },
   secondsPerTurnContainer: {
     flex: 1.5,
