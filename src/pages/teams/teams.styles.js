@@ -42,12 +42,26 @@ const styles = StyleSheet.create({
   team1Container: {
     flex: 4,
     padding: 22,
-    backgroundColor: "red",
+    borderBottomWidth: 2,
+  },
+  teamHeader: {
+    width: "100%",
+  },
+  teamHeaderText: {
+    textAlign: "center",
+    fontSize: 32,
+  },
+  teamMemberTextInput: {
+    borderWidth: 1,
+    width: 140,
+    height: 32,
+    borderRadius: 22,
+    textAlign: "center",
   },
   team2Container: {
     flex: 4,
     padding: 22,
-    backgroundColor: "blue",
+    borderBottomWidth: 2,
   },
   startContainer: {
     flex: 1,

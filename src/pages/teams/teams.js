@@ -30,10 +30,7 @@ function TeamsPage({ navigation }) {
           </View>
         ))}
         <View style={styles.teamMemberInputContainer}>
-          <TextInput
-            placeholder="Add Team Member"
-            style={styles.teamMemberTextInput}
-          />
+          <TextInput placeholder="+ADD" style={styles.teamMemberTextInput} />
         </View>
       </View>
       <View style={styles.team2Container}>
@@ -46,10 +43,7 @@ function TeamsPage({ navigation }) {
           </View>
         ))}
         <View style={styles.teamMemberInputContainer}>
-          <TextInput
-            placeholder="Add Team Member"
-            style={styles.teamMemberTextInput}
-          />
+          <TextInput placeholder="+ADD" style={styles.teamMemberTextInput} />
         </View>
       </View>
       <View style={styles.startContainer}>
