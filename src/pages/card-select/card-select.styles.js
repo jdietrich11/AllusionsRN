@@ -89,6 +89,33 @@ const styles = StyleSheet.create({
   },
   secondsPerTurnContainer: {
     flex: 1.5,
+    padding: 12,
+    flexDirection: "row",
+    justifyContent: "space-evenly",
+  },
+  secondsCounter: {
+    flexDirection: "row",
+  },
+  textInput: {
+    borderWidth: 2,
+    height: 32,
+    width: 72,
+    fontSize: 24,
+    textAlign: "center",
+  },
+  secondTurnsText: {
+    fontSize: 28,
+  },
+  teamsPageButton: {
+    borderWidth: 2,
+    height: 32,
+    width: 72,
+    borderRadius: 3,
+    backgroundColor: "green",
+    justifyContent: "center",
+  },
+  teamsPageButtonText: {
+    textAlign: "center",
   },
 });
 

@@ -1,4 +1,12 @@
-import { View, Text, StyleSheet, Pressable, Image, Button } from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  Pressable,
+  Image,
+  Button,
+  TextInput,
+} from "react-native";
 
 import styles from "./card-select.styles";
 
@@ -25,7 +33,7 @@ function CardSelect({ navigation }) {
         </View>
         <View style={styles.cardpacks}>
           {TempCardpacks.map((cardpack) => (
-            <View style={styles.cardpack}>
+            <View key={cardpack} style={styles.cardpack}>
               <Image style={styles.cardpackImage} />
               <View style={styles.cardpackTitleContainer}>
                 <Text style={styles.cardpackTitle}>{cardpack}</Text>
@@ -56,7 +64,16 @@ function CardSelect({ navigation }) {
         </View>
       </View>
       <View style={styles.secondsPerTurnContainer}>
-        <Text>Second Turns???</Text>
+        <View style={styles.secondsCounter}>
+          <TextInput style={styles.textInput} value="160" />
+          <Text style={styles.secondTurnsText}>second turns</Text>
+        </View>
+        <Pressable
+          onPress={() => navigation.navigate("teamsPage")}
+          style={styles.teamsPageButton}
+        >
+          <Text style={styles.teamsPageButtonText}>Teams &rarr;</Text>
+        </Pressable>
       </View>
     </View>
   );

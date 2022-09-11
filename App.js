@@ -5,6 +5,7 @@ import { NavigationContainer } from "@react-navigation/native";
 
 import HomePage from "./src/pages/home/home";
 import CardSelect from "./src/pages/card-select/card-select";
+import TeamsPage from "./src/pages/teams/teams";
 
 const Stack = createNativeStackNavigator();
 
@@ -17,6 +18,7 @@ export default function App() {
       >
         <Stack.Screen name="home" component={HomePage} />
         <Stack.Screen name="cardSelect" component={CardSelect} />
+        <Stack.Screen name="teamsPage" component={TeamsPage} />
       </Stack.Navigator>
     </NavigationContainer>
   );
