@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     borderColor: "white",
     width: 48,
     height: 48,
-    borderRadius: "199999%",
+    borderRadius: 1000000,
   },
   howToButtonText: {
     color: "white",

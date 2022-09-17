@@ -23,8 +23,12 @@ function CardSelect({ navigation }) {
   return (
     <View style={styles.container}>
       <View style={styles.containerHeader}>
-        <Pressable onPress={() => navigation.navigate("home")}>
-          <Text style={styles.headerText}>Go Back</Text>
+        <View style={styles.emptyContainer}></View>
+        <Pressable
+          style={styles.arrowContainer}
+          onPress={() => navigation.navigate("home")}
+        >
+          <Text style={styles.headerText}>&larr;</Text>
         </Pressable>
       </View>
       <View style={styles.cardPickerContainer}>

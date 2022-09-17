@@ -6,14 +6,31 @@ const styles = StyleSheet.create({
     backgroundColor: "#f8f8ff",
   },
   containerHeader: {
-    flex: 1,
-    backgroundColor: "black",
+    flex: 0.5,
+    flexDirection: "column",
+    backgroundColor: "white",
     justifyContent: "flex-end",
+    backgroundColor: "black",
+    padding: 8,
+  },
+  emptyContainer: {
+    flex: 1,
+  },
+  arrowContainer: {
+    flex: 1,
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    width: 32,
+    borderWidth: 4,
+    borderRadius: 1000000,
+    borderColor: "white",
   },
   headerText: {
+    fontSize: 32,
+    fontWeight: "bold",
+    textAlign: "center",
     color: "white",
-    fontSize: 22,
-    padding: 22,
   },
   cardPickerContainer: {
     flex: 5,
@@ -27,7 +44,7 @@ const styles = StyleSheet.create({
     fontSize: 22,
   },
   cardpacks: {
-    height: "90%",
+    height: "70%",
     flexDirection: "row",
     flexWrap: "wrap",
     justifyContent: "center",
@@ -62,19 +79,24 @@ const styles = StyleSheet.create({
   },
   cardCounterContainer: {
     flexDirection: "row",
+    alignItems: "center",
   },
   cardCounter: {
     flexDirection: "row",
+    marginRight: 8,
   },
   cardCounterText: {
     fontSize: 25,
+    textAlign: "center",
+    textAlignVertical: "center",
   },
   cardAdjustmentCounter: {
     borderWidth: 2,
     height: 30,
-    width: 30,
-    alignItems: "center",
+    width: 35,
+    flexDirection: "row",
     justifyContent: "center",
+    alignItems: "center",
   },
   cardCountBox: {
     borderTopWidth: 2,
@@ -88,7 +110,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   secondsPerTurnContainer: {
-    flex: 1.5,
+    flex: 0.5,
     padding: 12,
     flexDirection: "row",
     justifyContent: "space-evenly",
