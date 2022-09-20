@@ -1,4 +1,4 @@
-import { Text, View, FlatList } from "react-native";
+import { Text, View, FlatList, Pressable } from "react-native";
 
 import informationPageStyles from "./informationPage.styles";
 
@@ -20,23 +20,22 @@ function InformationPage() {
         </View>
         <View style={informationPageStyles.playerRulesContainer}>
           <View style={informationPageStyles.playerNameContainer}>
-            <Text style={informationPageStyles.playerName}>Player</Text>
+            <Text style={informationPageStyles.playerName}>Player Turn</Text>
           </View>
-          <View>
-            <Text>You Can...</Text>
-            <FlatList
-              data={Round1Rules}
-              renderItem={(rules) => {
-                return <Text>{rules.key}</Text>;
-              }}
-            />
+          <View style={informationPageStyles.rulesContainer}>
+            <Text style={informationPageStyles.rulesTitle}>You Can...</Text>
+            {Round1Rules.map((rule) => {
+              return (
+                <Text style={informationPageStyles.ruleText}>{rule.key}</Text>
+              );
+            })}
           </View>
-          <View>
-            <Text>Ready</Text>
-          </View>
+          <Pressable style={informationPageStyles.readyButton}>
+            <Text style={informationPageStyles.readyButtonText}>Ready</Text>
+          </Pressable>
         </View>
-        <View>
-          <Text>score</Text>
+        <View style={informationPageStyles.scoreContainer}>
+          <Text style={informationPageStyles.scoreText}>score</Text>
         </View>
       </View>
     </View>

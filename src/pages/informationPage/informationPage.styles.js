@@ -18,6 +18,18 @@ const informationPageStyles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
   },
+  rulesContainer: {
+    marginLeft: 42,
+  },
+  rulesTitle: {
+    textAlign: "center",
+    marginLeft: -42,
+    fontSize: 28,
+    textDecorationLine: "underline",
+  },
+  ruleText: {
+    fontSize: 22,
+  },
   skipContainer: {
     height: "90%",
     width: 32,
@@ -27,8 +39,22 @@ const informationPageStyles = StyleSheet.create({
     borderTopRightRadius: 100000,
     borderBottomRightRadius: 100000,
   },
+  scoreContainer: {
+    height: "90%",
+    width: 32,
+    justifyContent: "center",
+    borderWidth: 2,
+    borderStyle: "dashed",
+    borderTopLeftRadius: 100000,
+    borderBottomLeftRadius: 100000,
+  },
   skipText: {
     fontSize: 42,
+    textTransform: "uppercase",
+    textAlign: "center",
+  },
+  scoreText: {
+    fontSize: 52,
     textTransform: "uppercase",
     textAlign: "center",
   },
@@ -42,8 +68,24 @@ const informationPageStyles = StyleSheet.create({
     marginTop: 12,
   },
   playerName: {
-    fontSize: 32,
+    fontSize: 42,
     textAlign: "center",
+  },
+  readyButton: {
+    marginTop: "auto",
+    marginBottom: 12,
+    marginLeft: 12,
+    marginRight: 12,
+    height: 72,
+    borderWidth: 2,
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 12,
+    backgroundColor: "green",
+  },
+  readyButtonText: {
+    fontSize: 44,
+    textTransform: "uppercase",
   },
 });
 
