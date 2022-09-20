@@ -26,7 +26,7 @@ function CardSelect({ navigation }) {
         <View style={styles.emptyContainer}></View>
         <Pressable
           style={styles.arrowContainer}
-          onPress={() => navigation.navigate("home")}
+          onPress={() => navigation.navigate("teamsPage")}
         >
           <Text style={styles.headerText}>&larr;</Text>
         </Pressable>
@@ -60,7 +60,7 @@ function CardSelect({ navigation }) {
             </Pressable>
           </View>
           <View style={styles.cardpackCounter}>
-            <Text style={styles.cardCounterText}>{"from 3 cardpacks"}</Text>
+            <Text style={styles.cardCounterTextFrom}>{"from 3 cardpacks"}</Text>
           </View>
         </View>
         <View style={styles.playtimeContainer}>
@@ -73,10 +73,10 @@ function CardSelect({ navigation }) {
           <Text style={styles.secondTurnsText}>second turns</Text>
         </View>
         <Pressable
-          onPress={() => navigation.navigate("teamsPage")}
+          onPress={() => navigation.navigate("")}
           style={styles.teamsPageButton}
         >
-          <Text style={styles.teamsPageButtonText}>Teams &rarr;</Text>
+          <Text style={styles.teamsPageButtonText}>&rarr;</Text>
         </Pressable>
       </View>
     </View>

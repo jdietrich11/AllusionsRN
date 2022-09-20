@@ -10,7 +10,7 @@ function TeamsPage({ navigation }) {
   return (
     <View style={styles.teamsPageContainer}>
       <View style={styles.headerContainer}>
-        <Pressable onPress={() => navigation.navigate("cardSelect")}>
+        <Pressable onPress={() => navigation.navigate("home")}>
           <Text style={styles.headerText}>&larr;</Text>
         </Pressable>
         <View style={styles.howToContainer}>
@@ -46,9 +46,12 @@ function TeamsPage({ navigation }) {
           <TextInput placeholder="+ADD" style={styles.teamMemberTextInput} />
         </View>
       </View>
-      <View style={styles.startContainer}>
-        <Text>STart</Text>
-      </View>
+      <Pressable
+        style={styles.startContainer}
+        onPress={() => navigation.navigate("cardSelect")}
+      >
+        <Text>&rarr;</Text>
+      </Pressable>
     </View>
   );
 }

@@ -21,13 +21,14 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
-    width: 32,
+    width: 52,
     borderWidth: 4,
     borderRadius: 1000000,
     borderColor: "white",
   },
   headerText: {
     fontSize: 32,
+    marginTop: -15,
     fontWeight: "bold",
     textAlign: "center",
     color: "white",
@@ -89,6 +90,12 @@ const styles = StyleSheet.create({
     fontSize: 25,
     textAlign: "center",
     textAlignVertical: "center",
+    marginTop: -3,
+  },
+  cardCounterTextFrom: {
+    fontSize: 25,
+    textAlign: "center",
+    textAlignVertical: "center",
   },
   cardAdjustmentCounter: {
     borderWidth: 2,
@@ -108,6 +115,7 @@ const styles = StyleSheet.create({
     width: 75,
     fontSize: 18,
     textAlign: "center",
+    marginTop: 1,
   },
   secondsPerTurnContainer: {
     flex: 0.5,
@@ -117,6 +125,7 @@ const styles = StyleSheet.create({
   },
   secondsCounter: {
     flexDirection: "row",
+    alignItems: "center",
   },
   textInput: {
     borderWidth: 2,
@@ -124,6 +133,7 @@ const styles = StyleSheet.create({
     width: 72,
     fontSize: 24,
     textAlign: "center",
+    marginRight: 8,
   },
   secondTurnsText: {
     fontSize: 28,
@@ -131,13 +141,15 @@ const styles = StyleSheet.create({
   teamsPageButton: {
     borderWidth: 2,
     height: 32,
-    width: 72,
+    width: 75,
     borderRadius: 3,
-    backgroundColor: "green",
     justifyContent: "center",
+    marginTop: "4%",
   },
   teamsPageButtonText: {
     textAlign: "center",
+    fontSize: 32,
+    marginTop: -5,
   },
 });
 

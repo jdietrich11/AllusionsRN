@@ -17,8 +17,8 @@ export default function App() {
         initialRouteName="home"
       >
         <Stack.Screen name="home" component={HomePage} />
-        <Stack.Screen name="cardSelect" component={CardSelect} />
         <Stack.Screen name="teamsPage" component={TeamsPage} />
+        <Stack.Screen name="cardSelect" component={CardSelect} />
       </Stack.Navigator>
     </NavigationContainer>
   );
