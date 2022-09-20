@@ -6,6 +6,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import HomePage from "./src/pages/home/home";
 import CardSelect from "./src/pages/card-select/card-select";
 import TeamsPage from "./src/pages/teams/teams";
+import InformationPage from "./src/pages/informationPage/informationPage";
 
 const Stack = createNativeStackNavigator();
 
@@ -19,6 +20,7 @@ export default function App() {
         <Stack.Screen name="home" component={HomePage} />
         <Stack.Screen name="teamsPage" component={TeamsPage} />
         <Stack.Screen name="cardSelect" component={CardSelect} />
+        <Stack.Screen name="informationPage" component={InformationPage} />
       </Stack.Navigator>
     </NavigationContainer>
   );

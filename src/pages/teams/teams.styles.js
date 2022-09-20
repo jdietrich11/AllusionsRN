@@ -63,9 +63,19 @@ const styles = StyleSheet.create({
     padding: 22,
     borderBottomWidth: 2,
   },
-  startContainer: {
-    flex: 1,
+  nextContainer: {
+    flex: 0.5,
+    flexDirection: "row",
+    justifyContent: "space-between",
     padding: 22,
+  },
+  nextButtonContainer: {
+    borderWidth: 2,
+    borderRadius: 3,
+  },
+  nextButtonText: {
+    fontSize: 52,
+    marginTop: -33,
   },
 });
 

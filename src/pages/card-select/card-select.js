@@ -1,12 +1,5 @@
-import {
-  View,
-  Text,
-  StyleSheet,
-  Pressable,
-  Image,
-  Button,
-  TextInput,
-} from "react-native";
+import { useState } from "react";
+import { View, Text, Pressable, Image, TextInput } from "react-native";
 
 import styles from "./card-select.styles";
 
@@ -20,6 +13,8 @@ const TempCardpacks = [
 ];
 
 function CardSelect({ navigation }) {
+  const [cardCount, setCardCount] = useState(37);
+
   return (
     <View style={styles.container}>
       <View style={styles.containerHeader}>
@@ -49,13 +44,19 @@ function CardSelect({ navigation }) {
       <View style={styles.gameLengthContainer}>
         <View style={styles.cardCounterContainer}>
           <View style={styles.cardCounter}>
-            <Pressable style={styles.cardAdjustmentCounter}>
+            <Pressable
+              style={styles.cardAdjustmentCounter}
+              onPress={() => setCardCount(cardCount - 1)}
+            >
               <Text style={styles.cardCounterText}>-</Text>
             </Pressable>
             <View style={styles.cardCountBox}>
-              <Text style={styles.cardCount}>{"37 cards"}</Text>
+              <Text style={styles.cardCount}>{cardCount + " cards"}</Text>
             </View>
-            <Pressable style={styles.cardAdjustmentCounter}>
+            <Pressable
+              style={styles.cardAdjustmentCounter}
+              onPress={() => setCardCount(cardCount + 1)}
+            >
               <Text style={styles.cardCounterText}>+</Text>
             </Pressable>
           </View>
@@ -73,7 +74,7 @@ function CardSelect({ navigation }) {
           <Text style={styles.secondTurnsText}>second turns</Text>
         </View>
         <Pressable
-          onPress={() => navigation.navigate("")}
+          onPress={() => navigation.navigate("informationPage")}
           style={styles.teamsPageButton}
         >
           <Text style={styles.teamsPageButtonText}>&rarr;</Text>
