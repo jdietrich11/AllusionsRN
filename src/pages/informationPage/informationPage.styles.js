@@ -39,7 +39,7 @@ const informationPageStyles = StyleSheet.create({
     borderTopRightRadius: 100000,
     borderBottomRightRadius: 100000,
   },
-  scoreContainer: {
+  deckContainer: {
     height: "90%",
     width: 32,
     justifyContent: "center",
@@ -53,8 +53,8 @@ const informationPageStyles = StyleSheet.create({
     textTransform: "uppercase",
     textAlign: "center",
   },
-  scoreText: {
-    fontSize: 52,
+  deckText: {
+    fontSize: 42,
     textTransform: "uppercase",
     textAlign: "center",
   },
@@ -86,6 +86,20 @@ const informationPageStyles = StyleSheet.create({
   readyButtonText: {
     fontSize: 44,
     textTransform: "uppercase",
+  },
+  scoreContainer: {
+    alignSelf: "center",
+    width: "75%",
+    height: "8%",
+    marginTop: -42,
+    borderWidth: 2,
+    borderTopRightRadius: 42,
+    borderTopLeftRadius: 42,
+    borderStyle: "dashed",
+  },
+  scoreText: {
+    textAlign: "center",
+    fontSize: 32,
   },
 });
 

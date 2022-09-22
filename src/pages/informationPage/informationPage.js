@@ -8,7 +8,7 @@ const Round1Rules = [
   { key: "use as many words as needed" },
 ];
 
-function InformationPage() {
+function InformationPage({ navigation }) {
   return (
     <View style={informationPageStyles.informationPageContainer}>
       <View style={informationPageStyles.timerContainer}>
@@ -30,13 +30,19 @@ function InformationPage() {
               );
             })}
           </View>
-          <Pressable style={informationPageStyles.readyButton}>
+          <Pressable
+            style={informationPageStyles.readyButton}
+            onPress={() => navigation.navigate("playerTurnPage")}
+          >
             <Text style={informationPageStyles.readyButtonText}>Ready</Text>
           </Pressable>
         </View>
-        <View style={informationPageStyles.scoreContainer}>
-          <Text style={informationPageStyles.scoreText}>score</Text>
+        <View style={informationPageStyles.deckContainer}>
+          <Text style={informationPageStyles.deckText}>deck</Text>
         </View>
+      </View>
+      <View style={informationPageStyles.scoreContainer}>
+        <Text style={informationPageStyles.scoreText}>drag to score</Text>
       </View>
     </View>
   );
