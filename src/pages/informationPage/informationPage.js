@@ -32,7 +32,7 @@ function InformationPage({ navigation }) {
           </View>
           <Pressable
             style={informationPageStyles.readyButton}
-            onPress={() => navigation.navigate("playerTurnPage")}
+            onPress={() => navigation.navigate("PlayerTurnPage")}
           >
             <Text style={informationPageStyles.readyButtonText}>Ready</Text>
           </Pressable>

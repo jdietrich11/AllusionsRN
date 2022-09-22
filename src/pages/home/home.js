@@ -9,7 +9,7 @@ function HomePage({ navigation }) {
     <View style={styles.container}>
       <Pressable
         style={styles.buttonContainer}
-        onPress={() => navigation.navigate("teamsPage")}
+        onPress={() => navigation.navigate("TeamsPage")}
       >
         <Text style={styles.button}>Play!</Text>
       </Pressable>

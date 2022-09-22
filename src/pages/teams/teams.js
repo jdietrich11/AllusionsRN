@@ -75,7 +75,7 @@ function TeamsPage({ navigation }) {
         </Pressable>
         <Pressable
           style={styles.nextButtonContainer}
-          onPress={() => navigation.navigate("cardSelect")}
+          onPress={() => navigation.navigate("CardSelectPage")}
         >
           <Text style={styles.nextButtonText}>&rarr;</Text>
         </Pressable>

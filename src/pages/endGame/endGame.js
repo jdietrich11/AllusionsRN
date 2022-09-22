@@ -2,7 +2,7 @@ import { View, Text, Pressable } from "react-native";
 
 import endGameStyles from "./endGame.styles";
 
-function EndGamePage() {
+function EndGamePage({ navigation }) {
   return (
     <View style={endGameStyles.endGameContainer}>
       <View style={endGameStyles.gameOverContainer}>
@@ -21,10 +21,16 @@ function EndGamePage() {
         </Text>
       </View>
       <View style={endGameStyles.buttons}>
-        <Pressable style={endGameStyles.bttn}>
+        <Pressable
+          style={endGameStyles.bttn}
+          onPress={() => navigation.navigate("CardSelectPage")}
+        >
           <Text style={endGameStyles.buttonText}>Play Again</Text>
         </Pressable>
-        <Pressable style={endGameStyles.bttn}>
+        <Pressable
+          style={endGameStyles.bttn}
+          onPress={() => navigation.navigate("HomePage")}
+        >
           <Text style={endGameStyles.buttonText}>Done</Text>
         </Pressable>
       </View>

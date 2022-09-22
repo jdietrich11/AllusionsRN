@@ -12,7 +12,7 @@ const TempCardpacks = [
   "Sports",
 ];
 
-function CardSelect({ navigation }) {
+function CardSelectPage({ navigation }) {
   const [cardCount, setCardCount] = useState(37);
 
   return (
@@ -74,7 +74,7 @@ function CardSelect({ navigation }) {
           <Text style={styles.secondTurnsText}>second turns</Text>
         </View>
         <Pressable
-          onPress={() => navigation.navigate("informationPage")}
+          onPress={() => navigation.navigate("InformationPage")}
           style={styles.teamsPageButton}
         >
           <Text style={styles.teamsPageButtonText}>&rarr;</Text>
@@ -84,4 +84,4 @@ function CardSelect({ navigation }) {
   );
 }
 
-export default CardSelect;
+export default CardSelectPage;

@@ -4,7 +4,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NavigationContainer } from "@react-navigation/native";
 
 import HomePage from "./src/pages/home/home";
-import CardSelect from "./src/pages/card-select/card-select";
+import CardSelectPage from "./src/pages/card-select/card-select";
 import TeamsPage from "./src/pages/teams/teams";
 import InformationPage from "./src/pages/informationPage/informationPage";
 import PlayerTurnPage from "./src/pages/playerTurn/playerTurn";
@@ -20,11 +20,11 @@ export default function App() {
         screenOptions={{ headerShown: false }}
         initialRouteName="home"
       >
-        <Stack.Screen name="home" component={HomePage} />
-        <Stack.Screen name="teamsPage" component={TeamsPage} />
-        <Stack.Screen name="cardSelect" component={CardSelect} />
-        <Stack.Screen name="informationPage" component={InformationPage} />
-        <Stack.Screen name="playerTurnPage" component={PlayerTurnPage} />
+        <Stack.Screen name="HomePage" component={HomePage} />
+        <Stack.Screen name="TeamsPage" component={TeamsPage} />
+        <Stack.Screen name="CardSelectPage" component={CardSelectPage} />
+        <Stack.Screen name="InformationPage" component={InformationPage} />
+        <Stack.Screen name="PlayerTurnPage" component={PlayerTurnPage} />
         <Stack.Screen name="ScoreScreenPage" component={ScoreScreenPage} />
         <Stack.Screen name="EndGamePage" component={EndGamePage} />
       </Stack.Navigator>
