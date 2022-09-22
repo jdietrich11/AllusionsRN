@@ -9,6 +9,7 @@ import TeamsPage from "./src/pages/teams/teams";
 import InformationPage from "./src/pages/informationPage/informationPage";
 import PlayerTurnPage from "./src/pages/playerTurn/playerTurn";
 import ScoreScreenPage from "./src/pages/scoreScreen/scoreScreen";
+import EndGamePage from "./src/pages/endGame/endGame";
 
 const Stack = createNativeStackNavigator();
 
@@ -25,6 +26,7 @@ export default function App() {
         <Stack.Screen name="informationPage" component={InformationPage} />
         <Stack.Screen name="playerTurnPage" component={PlayerTurnPage} />
         <Stack.Screen name="ScoreScreenPage" component={ScoreScreenPage} />
+        <Stack.Screen name="EndGamePage" component={EndGamePage} />
       </Stack.Navigator>
     </NavigationContainer>
   );

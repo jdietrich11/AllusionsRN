@@ -1,10 +1,16 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { View, Text } from "react-native";
 
 import scoreScreenStyles from "./scoreScreen.styles";
 
-function ScoreScreenPage() {
+function ScoreScreenPage({ navigation }) {
   const [round, setRound] = useState(1);
+
+  useEffect(() => {
+    setTimeout(() => {
+      navigation.navigate("EndGamePage");
+    }, 3000);
+  }, []);
 
   return (
     <View style={scoreScreenStyles.scoreScreenContainer}>
