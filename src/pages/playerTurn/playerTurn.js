@@ -12,7 +12,7 @@ function PlayerTurnPage({ navigation }) {
         setTimer(timer - 1);
       }
       if (timer < 1) {
-        navigation.navigate("home");
+        navigation.navigate("ScoreScreenPage");
       }
     }, 1000);
   };
